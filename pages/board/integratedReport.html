@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport"/>
+    <meta name="author" content="31system" />
+    <meta name="description" content="벤허리서치센터" />
+    <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+    <title>통합레포트 | 벤허리서치센터</title>
+
+    <!-- og -->
+    <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색"/>
+    <meta property="og:title" content="벤허리서치센터" />
+    <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색"/>
+    <meta property="og:url" content="bh-rc.co.kr" />
+    <meta property="og:image" content="/images/kakao-img.png" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+
+    <!-- twitter -->
+    <meta name="twitter:title" content="벤허리서치센터" />
+    <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색"/>
+    <meta name="twitter:url" content="#" />
+    <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+    <!-- Faivicon -->
+    <link rel="icon" type="image/png" href="/images/favicon.png" />
+
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/common.css" />
+    <link rel="stylesheet" href="/css/board.css" />
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css" />
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+    <script src="/js/main.js" defer></script>
+    <!-- <script src="/js/report.js" defer></script> -->
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header"></header>
+
+    <main class="integrated-wrap">
+      <div class="inner">
+        <h2 class="page-tit">통합 레포트</h2>
+        <div class="inner-wrap">
+          <div class="report-tp">
+            <div class="tp-left">
+              <div class="icon-wrap">
+                <img src="/images/cal-icon.png" alt="달력아이콘" />
+              </div>
+              <div class="date-picker">
+                <input class="datepicker" id="strtDate" />
+                <p>~</p>
+                <input class="datepicker" id="endDate" />
+              </div>
+              <div class="date-filter">
+                <button name="filterDate" class="datefilter" value="1">
+                  1개월
+                </button>
+                <button name="filterDate" class="datefilter" value="2">
+                  6개월
+                </button>
+                <button name="filterDate" class="datefilter" value="3">
+                  1년
+                </button>
+              </div>
+            </div>
+            <div class="tp-right">
+              <div class="sel-board">
+                <select name="" id="board" class="board">
+                  <option value="제목" selected>제목</option>
+                  <option value="본문">본문</option>
+                  <option value="종목 & 종목명">기업</option>
+                  <option value="제공처">제공처</option>
+                </select>
+              </div>
+              <div class="search-input">
+                <input type="text" placeholder="제목" class="write-input" />
+                <select name="" id="exportCompany" class="export-company">
+                  <option value="0">전체</option>
+                  <option value="1">하나금융투자</option>
+                  <option value="2">대신증권</option>
+                  <option value="3">메리츠증권</option>
+                  <option value="4">삼성증권</option>
+                </select>
+              </div>
+              <button class="board-search">검색</button>
+            </div>
+          </div>
+          <div class="report-contents">
+            <div class="page-num">
+              <p>
+                전체&nbsp;<span class="all-page">67</span>&nbsp;&#47;&nbsp;<span>1페이지</span>
+              </p>
+            </div>
+            <p class="mo scroll">*가로로 스크롤 -></p>
+            <div class="table-wrap">
+              <!-- <table class="board-table">
+                <thead>
+                  <tr>
+                    <th class="date">날짜</th>
+                    <th class="tit">제목</th>
+                    <th class="subject-code">종목코드</th>
+                    <th class="subject-name">종목명</th>
+                    <th class="writer">작성자</th>
+                    <th class="source">제공처</th>
+                    <th class="comment">투자의견</th>
+                    <th class="target">목표가</th>
+                    <th>P</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                  <tr>
+                    <td>2022.01.01</td>
+                    <td class="title">
+                      <a href="/pages/board/reportDetail.html">제목이 나타납니다.</a>
+                    </td>
+                    <td>123456</td>
+                    <td>종목며엉</td>
+                    <td>홍길동</td>
+                    <td>투자증권</td>
+                    <td>매수</td>
+                    <td>99,000</td>
+                    <td>12</td>
+                  </tr>
+                </tbody>
+              </table> -->
+              <div class="no-contents">
+                등록된 내용이 없습니다.
+              </div>
+            </div>
+            <div id="pagination" class="pagination"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer id="footer"></footer>
+
+    <!-- privacy popup -->
+    <div class="popup-wrap" id="popupWrap"></div>
+
+    <script>
+      $(function () {
+        $("#strtDate").datepicker({
+          dateFormat: "yy-mm-dd", // 날짜의 형식
+          // minDate: 0,
+          nextText: ">",
+          prevText: "<",
+          onSelect: function (date) {
+            var endDate = $("#endDate");
+            var startDate = $(this).datepicker("getDate");
+            var minDate = $(this).datepicker("getDate");
+            endDate.datepicker("setDate", minDate);
+            startDate.setDate(startDate.getDate() + 30);
+            endDate.datepicker("option", "maxDate", startDate);
+            endDate.datepicker("option", "minDate", minDate);
+          },
+          showMonthAfterYear: true, //년도 먼저 나오고, 뒤에 월 표시
+          buttonText: "선택", //버튼에 마우스 갖다 댔을 때 표시되는 텍스트
+          yearSuffix: "년", //달력의 년도 부분 뒤에 붙는 텍스트
+          monthNamesShort: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+          ], //달력의 월 부분 텍스트
+          monthNames: [
+            "1월",
+            "2월",
+            "3월",
+            "4월",
+            "5월",
+            "6월",
+            "7월",
+            "8월",
+            "9월",
+            "10월",
+            "11월",
+            "12월",
+          ], //달력의 월 부분 Tooltip 텍스트
+          dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"], //달력의 요일 부분 텍스트
+          dayNames: [
+            "일요일",
+            "월요일",
+            "화요일",
+            "수요일",
+            "목요일",
+            "금요일",
+            "토요일",
+          ],
+        });
+
+        $("#endDate").datepicker({
+          dateFormat: "yy-mm-dd",
+          nextText: ">",
+          prevText: "<",
+          // maxDate: '0',
+          showMonthAfterYear: true, //년도 먼저 나오고, 뒤에 월 표시
+          buttonText: "선택", //버튼에 마우스 갖다 댔을 때 표시되는 텍스트
+          yearSuffix: "년", //달력의 년도 부분 뒤에 붙는 텍스트
+          monthNamesShort: [
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+          ], //달력의 월 부분 텍스트
+          monthNames: [
+            "1월",
+            "2월",
+            "3월",
+            "4월",
+            "5월",
+            "6월",
+            "7월",
+            "8월",
+            "9월",
+            "10월",
+            "11월",
+            "12월",
+          ], //달력의 월 부분 Tooltip 텍스트
+          dayNamesMin: ["일", "월", "화", "수", "목", "금", "토"], //달력의 요일 부분 텍스트
+          dayNames: [
+            "일요일",
+            "월요일",
+            "화요일",
+            "수요일",
+            "목요일",
+            "금요일",
+            "토요일",
+          ],
+        });
+        $(".datepicker").datepicker("setDate", "today");
+        dateFormatter = function (newDay, today) {
+          let year = newDay.getFullYear();
+          let month = newDay.getMonth() + 1;
+          let date = newDay.getDate();
+
+          if (today) {
+            let todayDate = today.getDate();
+
+            if (date != todayDate) {
+              if (month == 0) year -= 1;
+              month = (month + 11) % 12;
+              date = new Date(year, month, 0).getDate();
+            }
+          }
+
+          month = ("0" + month).slice(-2);
+          date = ("0" + date).slice(-2);
+
+          return year + "-" + month + "-" + date;
+        };
+
+        document.getElementsByName("filterDate").forEach((e) => {
+          e.addEventListener("click", function () {
+            let endDate = new Date($("#endDate").val());
+            let newDate = new Date($("#endDate").val());
+
+            switch (this.value) {
+              case "1":
+                newDate.setMonth(newDate.getMonth() - 1);
+                newDate = dateFormatter(newDate, endDate);
+                console.log("1개월");
+                break;
+              case "2":
+                newDate.setMonth(newDate.getMonth() - 6);
+                newDate = dateFormatter(newDate, endDate);
+                console.log("1개월");
+                break;
+              case "3":
+                newDate.setFullYear(newDate.getFullYear() - 1);
+                newDate = dateFormatter(newDate, endDate);
+                console.log("1년");
+                break;
+            }
+
+            $("#strtDate").val(newDate);
+          });
+        });
+
+        let searhInput = document.querySelector(".write-input");
+
+        $(".board").change(function () {
+          $(".board option:selected").each(function () {
+            if ($(this).val() == "제공처") {
+              $(searhInput).css("display", "none");
+              $(".export-company").css("display", "block");
+            } else {
+              $(searhInput).css("display", "block");
+              $(".export-company").css("display", "none");
+              $(searhInput).attr("placeholder", $(this).val());
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

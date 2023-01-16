@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>포인트결제 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/pay.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+
+  <!-- header -->
+  <header id="header"></header>
+
+  <main class="user-pay">
+    <div class="inner">
+      <div class="inner-tp">
+        <div class="sub-tit">결제</div>
+        <h2 class="main-tit">포인트결제</h2>
+      </div>
+      <div class="payment-wrap point-wrap">
+        <div class="wrap-tp">
+          <div class="pur-point pay-input">
+            <label for="point">포인트</label>
+            <div class="point-box">
+              <input type="text" id="point" class="total-point" value="1,000" disabled />
+              <div class="vol-box">
+                <a href="javascript:void(0)" class="minus control">
+                  <p></p>
+                </a>
+                <input type="number" class="result" value="1" />
+                <a href="javascript:void(0)" class="plus control">
+                  <p></p>
+                  <p></p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="payment pay-input">
+            <label for="amount">결제 금액</label>
+            <div class="input-box">
+              <input type="text" class="amount" value="1,100" disabled />
+              <p>원</p>
+            </div>
+          </div>
+          <div class="user-name pay-input">
+            <label for="name">이름</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="user-phone pay-input">
+            <label for="phone">휴대폰 번호</label>
+            <input type="number" required />
+          </div>
+          <div class="user-email pay-input">
+            <label for="email">이메일</label>
+            <div class="email-tp">
+              <input type="text" class="mail-id" id="mailid" placeholder="이메일 입력" required />
+              <p>@</p>
+              <input type="text" class="mail-add" id="mailadd" required disabled />
+            </div>
+            <div class="email-bt">
+              <select name="selectEmail" class="select-email">
+                <option value="naver.com">네이버</option>
+                <option value="gmail.com">지메일</option>
+                <option value="kakao.com">카카오</option>
+                <option value="1">직접입력</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-bt">
+          <div class="payment-method">
+            <label for="">결제수단</label>
+            <div class="methods">
+              <label for="account" class="method-name">
+                <span>무통장 입금</span>
+                <input type="radio" name="method" id="account" class="method"/>
+              </label>
+              <label for="virtual" class="method-name">
+                <span>가상계좌</span>
+                <input type="radio" name="method" id="virtual" class="method"/>
+              </label>
+              <label for="phone" class="method-name">
+                <span>휴대폰</span>
+                <input type="radio" name="method" id="phone" class="method"/>
+              </label>
+              <label for="credit" class="method-name">
+                <span>신용카드</span>
+                <input type="radio" name="method" id="credit" class="method"/>
+              </label>
+            </div>
+            <p>
+              *각 상품의 선택에 따라 가격이 변동됩니다. VAT 별도<br>              
+              결제가 올바르게 진행되기 위해 정확한 정보를 입력해주세요.
+            </p>
+          </div>
+          <div class="order-btn">
+            <a href="/pages/pay/pointPay.html">주문하기</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>
+
+    // 수량 조절
+    const minus = document.querySelector('.minus')
+    const plus = document.querySelector('.plus')
+    const result = document.querySelector('.result')
+    const totalPoint = document.querySelector('.total-point')
+    const amount = document.querySelector('.amount')
+    let i = 1;
+
+    result.addEventListener('change', function(){
+      if (result.value <= 0 ) {
+        alert('1개 이상 수량부터 결제가능합니다.')
+        result.value = i;
+        let totalPointNum = i * 1000;
+        totalPoint.value = totalPointNum.toLocaleString()
+        amount.value = (totalPointNum + (100*i)).toLocaleString()
+        return
+      } else {
+        i = result.value;
+        let totalPointNum = i * 1000;
+        totalPoint.value = totalPointNum.toLocaleString()
+        amount.value = (totalPointNum + (100*i)).toLocaleString()
+      }
+    })
+
+    plus.addEventListener('click', () => {
+      i++;
+      result.value = i;
+      let totalPointNum = i * 1000;
+      totalPoint.value = totalPointNum.toLocaleString()
+      amount.value = (totalPointNum + (100*i)).toLocaleString()
+    })
+    minus.addEventListener('click', () => {
+      if (i == 1) {
+        alert('1개 이상 수량부터 결제가능합니다.')
+        return;
+      } else if ( i > 1 ) {
+        i--;
+        result.value = i;
+        let totalPointNum = i * 1000;
+        totalPoint.value = totalPointNum.toLocaleString()
+        amount.value = (totalPointNum + (100*i)).toLocaleString()
+      }
+    })
+
+    // 결제수단 중 1 선택
+    const method = document.querySelectorAll('.method');
+    const labelName = document.querySelectorAll('.method-name')
+
+    for( let i = 0; i < method.length; i++) {
+      method[i].addEventListener('click', function(){
+        for(let j = 0; j < method.length; j++) {
+          labelName[j].classList.remove('active')
+        }
+        labelName[i].classList.add('active')
+      })
+    }
+
+    
+    $(function(){
+      // 이메일 주소 입력
+      let emailAdd = document.querySelector(".mail-add");
+
+      $('.select-email').change(function(){ 
+        $(".select-email option:selected").each(function () { 
+          if($(this).val()== '1'){
+            $(emailAdd).val('');
+            $(emailAdd).attr("disabled",false); 
+            $(emailAdd).focus();
+          }else{ 
+            $(emailAdd).val($(this).val()); 
+            $(emailAdd).attr("disabled",true); 
+          } 
+        }); 
+      });
+
+    })
+
+  </script>
+
+</body>
+</html>

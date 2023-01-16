@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>로그인 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/user.css">
+
+  <!-- Js -->
+  <script src="/js/main.js" defer></script>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <h1 class="login-logo">
+      <a href="/">
+        <img src="/images/logo.png" alt="로고">
+      </a>
+    </h1>
+  </header>
+
+  <main class="login-wrap">
+    <div class="inner">
+      <div class="login-box">
+        <h2 class="page-tit">로그인</h2>
+        <form action="" class="login-form">
+          <div class="login-tp">
+            <input type="text" class="user-id" placeholder="아이디를 입력해주세요." required />
+            <input type="password" name="" id="user-pw" class="user-pw" placeholder="비밀번호를 입력해주세요." required />
+          </div>
+          <div class="login-md">
+            <div class="auto-login">
+              <input type="checkbox" name="autologin" id="autologin" class="autologin"/>
+              <label for="autologin" class="check-label">
+                <span>
+                  자동 로그인
+                </span>
+              </label>
+            </div>
+            <a href="/pages/login/userInfoSearch.html" class="user-search">회원정보 찾기</a>
+          </div>
+          <div class="login-bt">
+            <button class="login-btn" type="button">로그인</button>
+            <a href="/pages/login/userSignup.html" class="user-join">회원가입</a>
+          </div>
+          <div class="sns-login">
+            <a href="#" class="nav-login">
+              <div class="img-wrap">
+                <img src="/images/nav-icon.png" alt="네이버 로그인" />
+              </div>
+              <p>네이버 로그인</p>
+            </a>
+            <a href="#" class="kakao-login">
+              <div class="img-wrap">
+                <img src="/images/kakao-icon.png" alt="카카오 로그인" />
+              </div>
+              <p>카카오 로그인</p>
+            </a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+  
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>
+
+    // 로그인 버튼 클릭 시 입력값 들어갔는지 확인
+    document.querySelector('.login-btn').addEventListener('click', function(){
+      if(document.querySelector('.user-id').value == '') {
+        alert('아이디를 입력해주세요.');
+        document.querySelector('.user-id').focus();
+      } else if (document.querySelector('.user-pw').value == '') {
+        alert('비밀번호를 입력해주세요.');
+        document.querySelector('.user-pw').focus()
+      }
+    });
+
+  </script>
+</body>
+</html>

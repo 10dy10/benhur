@@ -1,0 +1,259 @@
+@charset 'utf-8';
+@import url(./font.css);
+
+/*━━━━━━━━━━━━━━━━━CSS초기화 (Eric Meyer's css reset)━━━━━━━━━━━━━━━━━━━━━━━*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  font-family: 'Pretendard';
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  color: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html {
+  font-size: 62.5%;
+  font-weight: 300;
+  font-family: 'Pretendard', sans-serif;
+  overflow-x: hidden;
+}
+body {
+  line-height: 1;
+  font-size: 1.6rem;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+button,
+input {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border: 0;
+}
+button {
+  border: none;
+  background-color: transparent;
+}
+textarea {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  background-color: transparent;
+  border: 0;
+  word-break: keep-all;
+  word-wrap: break-word;
+  resize: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* input 기본 스타일 초기화 */
+input {
+  font-family: 'Pretendard', sans-serif;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  padding: .5rem;
+  color: var(--text-color);
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+}
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+select {
+  font-family: 'Pretendard', sans-serif;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+  background-image: url(/images/sel-icon.png);
+  background-repeat: no-repeat;
+  background-position: right 2px center;
+  cursor: pointer;
+  background-color:#fff;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+select:focus {
+  outline: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Pretendard';
+  color: var(--text-color);
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #000A3D;
+  --white: #ffffff;
+  --text-color: #202020;
+  --sub-color: #33C8FF;
+  --light-gray: #F6F6F6;
+  --border-color: #DBDBDB;
+  --red: #DC3131;
+  --border: 1px solid var(--border-color);
+}
+
+::selection {
+  background: var(--main-color);
+  color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: none !important;
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-color);
+}
+
+
+@media screen and (max-width: 850px) {
+  html {
+    font-size: 60%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

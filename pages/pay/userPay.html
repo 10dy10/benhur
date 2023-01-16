@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>회원결제 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/pay.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+
+  <!-- header -->
+  <header id="header"></header>
+
+  <main class="user-pay">
+    <div class="inner">
+      <div class="inner-tp">
+        <div class="sub-tit">결제</div>
+        <h2 class="main-tit">회원결제</h2>
+      </div>
+      <div class="payment-wrap">
+        <div class="wrap-tp">
+          <div class="user-div pay-input">
+            <label class="div-name">회원 구분 <span>(등급선택)</span></label>
+            <div class="check-group">
+              <div>
+                <input type="checkbox" id="basic" class="grade" value="1" />
+                <label for="basic">베이직</label>
+              </div>
+              <div>
+                <input type="checkbox" id="silver" class="grade" value="2" />
+                <label for="silver">실버</label>
+              </div>
+              <div>
+                <input type="checkbox" id="gold" class="grade" value="3" />
+                <label for="gold">골드</label>
+              </div>
+              <div>
+                <input type="checkbox" id="diamond" class="grade" value="4" />
+                <label for="diamond">다이아몬드</label>
+              </div>
+            </div>
+            <p class="caption">- 등급을 선택해주세요.</p>
+            <p>*각 상품의 선택에 따라 가격이 변동됩니다. VAT 별도</p>
+          </div>
+          <div class="month-ticket pay-input">
+            <label>월간 이용권</label>
+            <div class="sel-box">
+              <select name="" id="period" class="period">
+                <option value="0">기간 선택</option>
+                <option value="1">1개월</option>
+                <option value="2">2개월</option>
+                <option value="3">3개월</option>
+                <option value="4">4개월</option>
+                <option value="5">5개월</option>
+                <option value="6">6개월</option>
+                <option value="7">7개월</option>
+                <option value="8">8개월</option>
+                <option value="9">9개월</option>
+                <option value="10">10개월</option>
+                <option value="11">11개월</option>
+                <option value="12">12개월</option>
+              </select>
+            </div>
+          </div>
+          <div class="payment pay-input">
+            <label for="">결제 금액</label>
+            <div class="input-box">
+              <input type="text" value="0" class="total" disabled />
+              <p>원</p>
+            </div>
+          </div>
+          <div class="user-name pay-input">
+            <label for="name">이름</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="user-phone pay-input">
+            <label for="phone">휴대폰 번호</label>
+            <input type="number" required />
+          </div>
+          <div class="user-email pay-input">
+            <label for="email">이메일</label>
+            <div class="email-tp">
+              <input type="text" class="mail-id" id="mailid" placeholder="이메일 입력" required />
+              <p>@</p>
+              <input type="text" class="mail-add" id="mailadd" required disabled />
+            </div>
+            <div class="email-bt">
+              <select name="selectEmail" class="select-email">
+                <option value="naver.com">네이버</option>
+                <option value="gmail.com">지메일</option>
+                <option value="kakao.com">카카오</option>
+                <option value="1">직접입력</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="wrap-bt">
+          <div class="payment-method">
+            <label for="">결제수단</label>
+            <div class="methods">
+              <label for="account" class="method-name">
+                <span>무통장 입금</span>
+                <input type="radio" name="method" id="account" class="method"/>
+              </label>
+              <label for="virtual" class="method-name">
+                <span>가상계좌</span>
+                <input type="radio" name="method" id="virtual" class="method"/>
+              </label>
+              <label for="phone" class="method-name">
+                <span>휴대폰</span>
+                <input type="radio" name="method" id="phone" class="method"/>
+              </label>
+              <label for="credit" class="method-name">
+                <span>신용카드</span>
+                <input type="radio" name="method" id="credit" class="method"/>
+              </label>
+            </div>
+            <p>
+              *각 상품의 선택에 따라 가격이 변동됩니다. VAT 별도<br>
+              결제가 올바르게 진행되기 위해 정확한 정보를 입력해주세요.
+            </p>
+          </div>
+          <div class="order-btn">
+            <a href="/pages/pay/payDetail.html">주문하기</a>
+          </div>
+        </div>
+      </div>
+    </div> 
+
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>
+
+    // 등급 선택
+    const checkBox = document.querySelectorAll('.grade');
+    const caption = document.querySelector('.caption')
+    const period = document.querySelector('.period')
+    const total = document.querySelector('.total')
+    
+    for(let i = 0; i < checkBox.length; i++) {
+      checkBox[i].addEventListener('click', function(e){
+        for(let j = 0; j < checkBox.length; j++) {
+          checkBox[j].checked = false;
+        }
+        checkBox[i].checked = true;
+
+        switch(this.value) {
+          case '1' :
+            const cost1 = 1000;
+            total.value = (period.value * cost1).toLocaleString()
+            caption.innerText = '- 베이직 : 국내리포트'
+            break;
+          case '2' :
+            const cost2 = 170000;
+            total.value = (period.value * cost2).toLocaleString()
+            caption.innerText = '- 실버 : 국내리포트 + 해외리포트 + 대주주'
+            break;
+          case '3' :
+            const cost3 = 270000;
+            total.value = (period.value * cost3).toLocaleString()
+            caption.innerText = '- 골드 : 국내리포트 + 해외리포트 + 대주주 + 재무제표'
+            break;
+          case '4' :
+            const cost4 = 370000;
+            total.value = (period.value * cost4).toLocaleString()
+            caption.innerText = '- 다이아 : 국내리포트 + 해외리포트 + 대주주 + 재무제표 + 위험관리'
+            break;
+        }
+      })
+    }
+
+    period.addEventListener('change', function(){
+      if (checkBox[0].checked == true) {
+        const cost1 = 1000;
+        total.value = (period.value * cost1).toLocaleString()
+      } else if (checkBox[1].checked == true) {
+        const cost2 = 170000
+        total.value = (period.value * cost2).toLocaleString()
+      } else if (cehckBox[2].checked == true) {
+        const cost3 = 270000;
+        total.value = (period.value * cost3).toLocaleString()
+      } else {
+        const cost4 = 370000;
+        total.value = (period.value * cost4).toLocaleString()
+      }
+    })
+
+
+    // 결제수단 중 1 선택
+    const method = document.querySelectorAll('.method');
+    const labelName = document.querySelectorAll('.method-name')
+
+    for( let i = 0; i < method.length; i++) {
+      method[i].addEventListener('click', function(){
+        for(let j = 0; j < method.length; j++) {
+          labelName[j].classList.remove('active')
+        }
+        labelName[i].classList.add('active')
+      })
+    }
+
+    
+    $(function(){
+      // 이메일 주소 입력
+      let emailAdd = document.querySelector(".mail-add");
+
+      $('.select-email').change(function(){ 
+        $(".select-email option:selected").each(function () { 
+          if($(this).val()== '1'){
+            $(emailAdd).val('');
+            $(emailAdd).attr("disabled",false); 
+            $(emailAdd).focus();
+          }else{ 
+            $(emailAdd).val($(this).val()); 
+            $(emailAdd).attr("disabled",true); 
+          } 
+        }); 
+      });
+
+    })
+
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,366 @@
+
+.user-pay {
+  padding-bottom: 12rem;
+}
+.inner-tp {
+  margin-bottom: 3.8rem;
+  text-align: center;
+}
+.sub-tit {
+  margin-bottom: .6rem;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #A5A5A5;
+}
+.main-tit {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+.payment-wrap {
+  margin: 0 auto;
+  max-width: 346px;
+  /* padding: 0 2rem; */
+}
+.payment-wrap label {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+.payment-wrap .wrap-tp {
+  border-bottom: var(--border);
+}
+.payment-wrap .pay-input {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 2.7rem;
+}
+.payment-wrap .user-div {
+  gap: 10px;
+}
+.payment-wrap .user-div .div-name span {
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #A8A8A8;
+}
+.payment-wrap .user-div .check-group {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+  gap: 1rem;
+}
+.payment-wrap .user-div .check-group label {
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.payment-wrap .user-div p {
+  font-size: 1.4rem;
+  color: var(--red);
+}
+.payment-wrap .user-div .caption {
+  color: #A8A8A8;
+  line-height: 1.2;
+}
+.payment-wrap .month-ticket .sel-box {
+  width: 100%;
+  height: 4.6rem;
+  border: var(--border);
+  padding: 0 1.5rem;
+}
+.payment-wrap .month-ticket .sel-box select {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.payment-wrap .payment .input-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 4.6rem;
+  padding: 0 1.5rem 0 1.9rem;
+  border: var(--border);
+  font-size: 1.4rem;
+  font-weight: 400;
+  background-color: #F9F9F9;
+}
+.payment-wrap .payment .input-box input {
+  padding: 0;
+  border: 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: transparent;
+}
+.payment-wrap .user-name input,
+.payment-wrap .user-phone input {
+  width: 100%;
+  height: 4.6rem;
+  border: var(--border);
+  padding: 0 1.5rem;
+}
+.payment-wrap .user-email .email-tp {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.payment-wrap .user-email .email-tp .mail-id {
+  width: 13.8rem;
+  height: 4.6rem;
+  padding: 0 1.5rem;
+}
+.payment-wrap .user-email .email-tp .mail-add {
+  width: 17.3rem;
+  height: 4.6rem;
+  padding: 0 1.5rem;
+}
+.payment-wrap .user-email .email-bt {
+  width: 100%;
+  height: 4.6rem;
+  padding: 0 1.5rem;
+  border: var(--border);
+}
+.payment-wrap .user-email .email-bt .select-email {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+.payment-wrap .wrap-bt {
+  padding-top: 2.7rem;
+}
+.payment-wrap .wrap-bt .methods {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 8px;
+  width: 100%;
+  margin-top: 7px;
+  margin-bottom: 14px;
+}
+.payment-wrap .wrap-bt .methods label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc((100% - 8px) / 2);
+  height: 5.2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  background-color: #676767;
+  color: var(--white);
+  cursor: pointer;
+  position: relative;
+  transition: .2s;
+}
+.payment-wrap .wrap-bt .methods label.active {
+  border: 1px solid var(--text-color);
+  background-color: transparent;
+  color: var(--text-color);
+}
+.payment-wrap .wrap-bt .methods label input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+}
+.payment-wrap .wrap-bt p {
+  margin-bottom: 2.7rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: var(--red);
+}
+.payment-wrap .wrap-bt .order-btn {
+  width: 100%;
+  height: 5.2rem;
+  background-color: var(--text-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+.payment-wrap .wrap-bt .order-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+  text-align: center;
+}
+
+.point-wrap .point-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.1rem;
+}
+.point-wrap .point-box .total-point {
+  width: 24.6rem;
+  height: 4.6rem;
+  padding: 0 1.5rem;
+  border: var(--border);
+  background-color: var(--white);
+}
+.point-wrap .point-box .vol-box {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
+.point-wrap .point-box .vol-box .control {
+  width: 26px;
+  height: 26px;
+  border-radius: 5px;
+  background-color: var(--text-color);
+  position: relative;
+}
+.point-wrap .point-box .vol-box .control p {
+  width: 10px;
+  height: 1px;
+  background-color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.point-wrap .point-box .vol-box .result {
+  font-size: 1.4rem;
+  font-weight: 700;
+  width: 18px;
+  border: 0;
+  padding: 0;
+  text-align: center;
+}
+.point-wrap .point-box .vol-box .plus p:last-child {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.detail-pay .pay-tit {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.detail-pay .datail-tp {
+  display: flex;
+  align-items: center;
+  gap: 1.7rem;
+  padding-bottom: 4.2rem;
+  border-bottom: var(--border);
+}
+.detail-pay .datail-tp .num {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: var(--red);
+}
+.detail-pay .detail-md {
+  padding: 4rem 0;
+  border-bottom: var(--border);
+}
+.detail-pay .pay-info {
+  width: 100%;
+  margin-top: 1.2rem;
+  border: var(--border);
+}
+.detail-pay .top-box {
+  border-bottom: var(--border);
+}
+.detail-pay .box ul {
+  display: flex;
+}
+.detail-pay .box-tit li,
+.detail-pay .box-txt li {
+  display: flex;
+  align-items: center;
+  height: 4.8rem;
+}
+.detail-pay .box-tit li {
+  justify-content: center;
+}
+.detail-pay .box-txt li {
+  padding: 0 2.4rem;
+}
+.detail-pay .box ul li:nth-child(1) {
+  width: 33.7%;
+  border-right: var(--border);
+}
+.detail-pay .box ul li:nth-child(2) {
+  width: 21.6%;
+  border-right: var(--border);
+}
+.detail-pay .box ul li:nth-child(3) {
+  width: 44.4%;
+}
+.detail-pay .box-tit {
+  border-bottom: var(--border);
+  font-weight: 700;
+  background-color: #F6F6F6;
+  text-align: center;
+}
+.detail-pay .detail-bt {
+  padding-top: 4rem;
+}
+.detail-pay .pay-plus .top-box {
+  border-bottom: 0;
+}
+.detail-pay .pay-plus ul li:nth-child(1),
+.detail-pay .pay-plus ul li:nth-child(2),
+.detail-pay .pay-plus ul li:nth-child(3) {
+  width: 33.3%;
+}
+.detail-pay .pay-plus .outstand {
+  color: var(--red);
+}
+.detail-pay .back-btn {
+  margin-top: 5.5rem;
+}
+.detail-pay .back-btn button {
+  display: block;
+  width: 33.6rem;
+  height: 5.2rem;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-weight: 400;
+  background-color: #9D9D9D;
+  color: var(--white);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  .detail-pay .pay-info {
+    border-bottom: 0;
+  }
+  .detail-pay .box {
+    display: flex;
+    border: none;
+  }
+  .detail-pay .box ul {
+    flex-direction: column;
+  }
+  .detail-pay .box .box-tit,
+  .detail-pay .box .box-txt {
+    width: 50%;
+    border-bottom: none;
+  }
+  .detail-pay .top-box ul li:nth-child(1), 
+  .detail-pay .bottom-box ul li:nth-child(1),
+  .detail-pay .top-box ul li:nth-child(2), 
+  .detail-pay .bottom-box ul li:nth-child(2),
+  .detail-pay .top-box ul li:nth-child(3), 
+  .detail-pay .bottom-box ul li:nth-child(3) {
+    width: 100%;
+    border: none;
+    border-bottom: var(--border);
+  }
+  .detail-pay .box .box-txt {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  
+}
+
+@media screen and (max-width: 350px) {
+  .point-wrap .point-box .total-point {
+    width: 100%;
+  }
+}

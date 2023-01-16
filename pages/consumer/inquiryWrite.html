@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>1:1문의 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/consumer.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+
+  <!-- header -->
+  <header id="header"></header>
+
+  <main class="write-wrap">
+    <div class="inner">
+      <div class="sub-tit">고객센터</div>
+      <h2 class="page-tit">문의하기</h2>
+      <div class="inner-contents">
+        <form action="">
+          <div class="row">
+            <label for="email">이메일 주소</label>
+            <div class="email">
+              <input type="text" class="email-id writer-id" placeholder="이메일 입력" />
+              <p>@</p>
+              <input type="text" class="email-add writer-add" disabled />
+              <div class="select-box">
+                <select name="" class="select-email">
+                  <option value="naver.com">네이버</option>
+                  <option value="gmail.com">지메일</option>
+                  <option value="kakao.com">카카오</option>
+                  <option value="1">직접 입력</option>
+                </select>
+              </div>
+              <div>
+                <input type="checkbox" name="" id="answer" />
+                <label for="answer" class="answer">답변 받기</label>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="phone">
+              <label for="phone">휴대폰 번호</label>
+              <input type="number" class="writer-ph" id="" placeholder="숫자만 입력" />
+            </div>
+            <div class="divi">
+              <label for="divi">분류</label>
+              <div class="select-box">
+                <select name="" id="">
+                  <option value="">선택하세요</option>
+                  <option value="1">회원</option>
+                  <option value="2">포인트</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row title">
+            <label for="">제목 <span>(필수)</span></label>
+            <input type="text" required />
+          </div>
+          <div class="row text">
+            <label for="content">문의 내용</label>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+          </div>
+          <div class="row files">
+            <label for="">첨부파일</label>
+            <div class="file">              
+              <input type="file" name="" id="">
+              <input type="file" name="" id="">
+            </div>
+          </div>
+          <div class="row submit">
+            <button type="button" class="inquiry-submit">문의하기</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>    
+    $(function(){
+      // 이메일 주소 입력
+      let emailAdd = document.querySelector(".email-add");
+
+      $('.select-email').change(function(){ 
+        $(".select-email option:selected").each(function () { 
+          if($(this).val()== '1'){
+            $(emailAdd).val('');
+            $(emailAdd).attr("disabled",false); 
+            $(emailAdd).focus();
+          }else{ 
+            $(emailAdd).val($(this).val()); 
+            $(emailAdd).attr("disabled",true); 
+          } 
+        }); 
+      });
+    })
+
+    document.querySelector('#answer').addEventListener('click', function(){
+      if(document.querySelector('#answer').checked) {
+        document.querySelector('.inquiry-submit').addEventListener('click', function(){
+          if (document.querySelector('.writer-id').value == '') {
+            alert('답변받을 이메일 주소를 입력하세요.')
+            document.querySelector('.writer-id').focus()
+          } else if (document.querySelector('.writer-add').value == '') {
+            alert('답변받을 이메일 주소를 입력하세요.')
+            document.querySelector('.writer-add').focus()
+          }
+        })
+      }
+      console.log(document.querySelector('#answer').checked)
+    })
+
+
+  </script>
+
+</body>
+</html>

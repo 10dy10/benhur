@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>내정보 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/user.css">
+
+  <!-- Js -->
+  <script src="/js/main.js" defer></script>
+
+<body>
+
+  <!-- header -->
+  <header class="login-status">
+    <div class="inner">
+      <div class="hidden"></div>
+      <h1 class="login-logo">
+        <a href="/">
+          <img src="/images/logo.png" alt="로고">
+        </a>
+      </h1>
+      <ul class="right">
+        <li class="user-info">
+          <a href="/pages/login/myInfo.html">내정보</a>
+        </li>
+        <li>
+          <a href="#">로그아웃</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="myinfo-wrap">
+    <div class="inner">
+      <h2 class="page-tit">내정보</h2>
+      <div class="contents-inner">
+        <div class="left">
+          <div class="point-box box">
+            <a onclick="window.open('/pages/login/myPoint.html', '포인트','width=580, height=606'); return false;" target="_blank">
+              <div class="box-tit">포인트</div>
+              <p class="user-point">0</p>
+            </a>
+          </div>
+          <div class="letter-box box">
+            <div class="letter-group letter write">
+              <div class="box-tp">
+                <div class="tab-btn">
+                  <a href="javascript:void(0)" class="letter-btn box-tit active">받은 쪽지</a>
+                  <a href="javascript:void(0)" class="letter-btn box-tit">보낸 쪽지</a>
+                </div>
+                <a class="letter-write" href="javascript:void(0)">
+                  <div class="img-wrap">
+                    <img src="/images/write-icon.png" alt="쪽지 작성" />
+                  </div>
+                  <span>작성하기</span>
+                </a>
+              </div>
+              <div class="box-inner">
+                <div class="received-letter tab-contents active">
+                  <ul class="letter-list">
+                    <li>
+                      <a href="#">받은 쪽지함입니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                    <ul>
+                      <li class="prev"><button>&#60;</button></li>
+                      <li class="page active"><button>1</button></li>
+                      <li class="page"><button>2</button></li>
+                      <li class="page"><button>3</button></li>
+                      <li class="next"><button>&#62;</button></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="sent-letter tab-contents">
+                  <ul class="letter-list">
+                    <li>
+                      <a href="#">보낸 쪽지함니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                    <li>
+                      <a href="#">게시물 제목이 나타납니다.</a>
+                    </li>
+                  </ul>
+                  <div class="pagination">
+                    <ul>
+                      <li class="prev"><button>&#60;</button></li>
+                      <li class="page active"><button>1</button></li>
+                      <li class="page"><button>2</button></li>
+                      <li class="page"><button>3</button></li>
+                      <li class="next"><button>&#62;</button></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="write-here letter">
+              <div class="box-tp">
+                <p class="box-tit">쪽지 작성하기</p>
+                <a href="javascript:void(0)" class="close-btn">X</a>
+              </div>
+              <div class="user-receive">
+                <label for="receive-user">받는 회원</label>
+                <input type="text" placeholder="여러 회원에게 보낼때는 회원아이디를 콤마(,)로 구분해 주세요.">
+              </div>
+              <div class="letter-txt">
+                <label for="letterTxt">쪽지 내용</label>
+                <textarea name="" id="letterTxt" cols="30" rows="10"></textarea>
+              </div>
+              <div class="send-btn">
+                <button class="send">보내기</button>
+              </div>
+            </div>
+          </div>
+          <div class="scrap-box box">
+            <div class="box-tit">스크랩함</div>
+            <ul class="scrap-list">
+              <li>
+                <div class="scrap-tit">
+                  <a href="#" class="tit">게시물 제목이 나타납니다.</a>
+                  <a href="#" class="delete">삭제</a>
+                </div>
+                <div class="scrap-day">
+                  2022-03-12 00:12:55
+                </div>
+              </li>
+              <li>
+                <div class="scrap-tit">
+                  <a href="#" class="tit">게시물 제목이 나타납니다.</a>
+                  <a href="#" class="delete">삭제</a>
+                </div>
+                <div class="scrap-day">
+                  2022-03-12 00:12:55
+                </div>
+              </li>
+              <li>
+                <div class="scrap-tit">
+                  <a href="#" class="tit">게시물 제목이 나타납니다.</a>
+                  <a href="#" class="delete">삭제</a>
+                </div>
+                <div class="scrap-day">
+                  2022-03-12 00:12:55
+                </div>
+              </li>
+              <li>
+                <div class="scrap-tit">
+                  <a href="#" class="tit">게시물 제목이 나타납니다.</a>
+                  <a href="#" class="delete">삭제</a>
+                </div>
+                <div class="scrap-day">
+                  2022-03-12 00:12:55
+                </div>
+              </li>
+              <li>
+                <div class="scrap-tit">
+                  <a href="#" class="tit">게시물 제목이 나타납니다.</a>
+                  <a href="#" class="delete">삭제</a>
+                </div>
+                <div class="scrap-day">
+                  2022-03-12 00:12:55
+                </div>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ul>
+                <li class="prev"><button>&#60;</button></li>
+                <li class="page active"><button>1</button></li>
+                <li class="page"><button>2</button></li>
+                <li class="page"><button>3</button></li>
+                <li class="next"><button>&#62;</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <div class="alert-box box">
+            <div class="tab-btn">
+              <a href="javascript:void(0)" class="alert-btn box-tit active">전체 알림</a>
+              <a href="javascript:void(0)" class="alert-btn box-tit">읽은 알림</a>
+              <a href="javascript:void(0)" class="alert-btn box-tit">안 읽은 알림</a>              
+            </div>
+            <div class="all-alert tab-alert active">                
+              <ul class="alert-list">
+                <li>
+                  <a href="#">전체 알림입니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul>
+                  <li class="prev"><button>&#60;</button></li>
+                  <li class="page active"><button>1</button></li>
+                  <li class="page"><button>2</button></li>
+                  <li class="page"><button>3</button></li>
+                  <li class="next"><button>&#62;</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="read-alert tab-alert">                
+              <ul class="alert-list">
+                <li>
+                  <a href="#">읽은 알림입니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul>
+                  <li class="prev"><button>&#60;</button></li>
+                  <li class="page active"><button>1</button></li>
+                  <li class="page"><button>2</button></li>
+                  <li class="page"><button>3</button></li>
+                  <li class="next"><button>&#62;</button></li>
+                </ul>
+              </div>
+            </div>
+            <div class="noread-alert tab-alert">                
+              <ul class="alert-list">
+                <li>
+                  <a href="#">안읽은 알림입니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+                <li>
+                  <a href="#">게시물 제목이 나타납니다.</a>
+                </li>
+              </ul>
+              <div class="pagination">
+                <ul>
+                  <li class="prev"><button>&#60;</button></li>
+                  <li class="page active"><button>1</button></li>
+                  <li class="page"><button>2</button></li>
+                  <li class="page"><button>3</button></li>
+                  <li class="next"><button>&#62;</button></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="recommend-box box">
+            <div class="box-tp">
+              <div class="box-tit">추천인</div>
+              <div class="tp-right">
+                <a class="recommend-copy" href="#">추천인 복사</a>
+                <p class="recommend-people">0</p>
+              </div>
+            </div>
+            <p class="txt">
+              <span class="user-id">admin</span>님을 추천하신 회원목록입니다.<br/>
+              검색은 ctrl+f를 이용해주시기 바랍니다. (모바일은 해당 브라우저의 찾기메뉴 이용)
+            </p>
+            <ul class="recomd-list">
+              <li>
+                <p class="recommend-id">아이디</p>
+                <p class="recommend-name">홍길동</p>
+                <p class="field">여분필드1</p>
+                <p class="last-connect">2022-04-18 00:57:55</p>
+                <p class="join-day">2022-04-18</p>
+              </li>
+              <li>
+                <p class="recommend-id">아이디</p>
+                <p class="recommend-name">홍길동</p>
+                <p class="field">여분필드1</p>
+                <p class="last-connect">2022-04-18 00:57:55</p>
+                <p class="join-day">2022-04-18</p>
+              </li>
+              <li>
+                <p class="recommend-id">아이디</p>
+                <p class="recommend-name">홍길동</p>
+                <p class="field">여분필드1</p>
+                <p class="last-connect">2022-04-18 00:57:55</p>
+                <p class="join-day">2022-04-18</p>
+              </li>
+              <li>
+                <p class="recommend-id">아이디</p>
+                <p class="recommend-name">홍길동</p>
+                <p class="field">여분필드1</p>
+                <p class="last-connect">2022-04-18 00:57:55</p>
+                <p class="join-day">2022-04-18</p>
+              </li>
+              <li>
+                <p class="recommend-id">아이디</p>
+                <p class="recommend-name">홍길동</p>
+                <p class="field">여분필드1</p>
+                <p class="last-connect">2022-04-18 00:57:55</p>
+                <p class="join-day">2022-04-18</p>
+              </li>
+            </ul>
+            <div class="pagination">
+              <ul>
+                <li class="prev"><button>&#60;</button></li>
+                <li class="page active"><button>1</button></li>
+                <li class="page"><button>2</button></li>
+                <li class="page"><button>3</button></li>
+                <li class="next"><button>&#62;</button></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bt-btn">
+        <a href="/">홈으로</a>
+        <a href="/pages/login/userSecession.html">회원탈퇴</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+  
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+
+  <script>    
+    const tabBtn = document.querySelectorAll('.letter-btn')
+    const tabContents = document.querySelectorAll('.tab-contents')
+
+    for(let i = 0; i < tabBtn.length; i++) {
+      tabBtn[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        for(let j = 0; j < tabBtn.length; j++) {
+          tabBtn[j].classList.remove('active')
+          tabContents[j].classList.remove('active')
+        }
+
+        tabBtn[i].classList.add('active')
+        tabContents[i].classList.add('active')
+      })
+    }
+
+    const tabBtn2 = document.querySelectorAll('.alert-btn')
+    const tabContents2 = document.querySelectorAll('.tab-alert')
+
+    for(let i = 0; i < tabBtn2.length; i++) {
+      tabBtn2[i].addEventListener('click', function(e) {
+        e.preventDefault();
+        for(let j = 0; j < tabBtn2.length; j++) {
+          tabBtn2[j].classList.remove('active')
+          tabContents2[j].classList.remove('active')
+        }
+
+        tabBtn2[i].classList.add('active')
+        tabContents2[i].classList.add('active')
+      })
+    }
+
+    const letterBox = document.querySelector('.letter-box')
+    const write = document.querySelector('.write-here')
+    const letterGroup = document.querySelector('.letter-group')
+    const writeBtn = document.querySelector('.letter-write')
+    const closeBtn = document.querySelector('.close-btn')
+
+    writeBtn.addEventListener('click', function(e){
+      write.classList.add('open')
+      letterBox.classList.add('open')
+      letterGroup.classList.remove('write')
+    })
+
+    closeBtn.addEventListener('click', function(e){
+      write.classList.remove('open')
+      letterBox.classList.remove('open')
+      letterGroup.classList.add('write')
+    })
+
+
+  </script>
+
+</body>
+</html>

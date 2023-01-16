@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>회원가입 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+  
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/user.css">
+
+  
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- Js -->
+  <script src="/js/main.js" defer></script>
+
+<body>
+
+  <!-- header -->
+  <header>
+    <h1 class="login-logo">
+      <a href="/">
+        <img src="/images/logo.png" alt="로고">
+      </a>
+    </h1>
+  </header>
+
+  <main class="signup2-wrap">
+    <div class="inner">
+      <h2 class="page-tit">회원가입</h2>
+      <div class="signup-form">
+        <form action="">
+          <div class="form-tp">
+            <div class="input-box">
+              <label for="userid">아이디</label>
+              <input type="text" 
+                id="userid" 
+                maxlength="20" 
+                class="user-id"
+                placeholder="영소문자, 숫자, _만 입력 가능, 최소 3자이상, 20자 이하" 
+                minlength="3"
+              />
+            </div>
+            <div class="input-box">
+              <label for="userpw">비밀번호</label>
+              <input type="password" 
+                class="user-pw" 
+                id="userpw" 
+                minlength="8" 
+                placeholder="8자리 이상 20자리 이하 숫자, 영문자 혼합"/>
+            </div>
+            <div class="input-box">
+              <label for="user-pwch">비밀번호 확인</label>
+              <input type="password" class="user-pwch" id="passcheck" minlength="8" />
+            </div>
+            <div class="input-box">
+              <label for="usernickname">닉네임</label>
+              <input type="text" 
+                class="user-nickname" 
+                id="usernickname" 
+                placeholder="공백없이 한글,영문,숫자(한글2자,영문4자 이상 가능)" 
+                minlength="2"
+              />
+              <p>※닉네임은 60일에 한 번 변경 가능합니다.</p>
+            </div>
+            <div class="input-box">
+              <label for="mail-id">이메일</label>
+              <div class="email-box">
+                <div class="email-tp">
+                  <input type="text" class="mail-id" id="mailid" placeholder="이메일 입력" />
+                  <p>@</p>
+                  <input type="text" class="mail-add" id="mailadd" disabled />
+                </div>
+                <div class="email-bt">
+                  <select name="selectEmail" class="select-email">
+                    <option value="0">메일 선택</option>
+                    <option value="naver.com">네이버</option>
+                    <option value="gmail.com">지메일</option>
+                    <option value="kakao.com">카카오</option>
+                    <option value="1">직접입력</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="input-box">
+              <label for="username">이름</label>
+              <input type="text" class="user-name" id="username" />
+            </div>
+            <div class="input-box">
+              <label for="userphone">휴대폰 번호</label>
+              <input type="number" class="user-phone" id="userphone" placeholder="숫자만 입력" maxlength="11" />
+            </div>
+            <div class="check-box">              
+              <input type="checkbox" id="mailagree" class="mail-agree"/>
+              <label for="mailagree">메일링서비스 이용 동의</label>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="snsagree" class="sns-agree"/>
+              <label for="snsagree">SNS 수신 여부 동의</label>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" id="infoagree" class="info-agree"/>
+              <label for="infoagree">나의 정보 공개 동의</label>
+            </div>
+          </div>
+          <div class="recommend-user input-box">
+            <label for="recommend">추천인 아이디 <span>(선택사항)</span></label>
+            <input type="text" class="user-recommend" id="userrecomm"/>
+          </div>
+          <button type="button" class="join-btn">가입하기</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer id="footer"></footer>
+  
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>
+
+    const userId = document.querySelector('.user-id');
+    const userPw = document.querySelector('.user-pw');
+    const userPwch = document.querySelector('.user-pwch');
+    const nickname = document.querySelector('.user-nickname');
+    const mailId = document.querySelector('.mail-id');
+    const mailAdd = document.querySelector('.mail-add');
+    const userName = document.querySelector('.user-name');
+    const userPh = document.querySelector('.user-phone');
+
+    const joinUs = document.querySelector('.join-btn')
+
+    joinUs.addEventListener('click', function(){
+      const id = userId.value;
+      const eng = id.search(/[a-z]/g)
+      const num = id.search(/[0-9]/g)
+      const spe = id.search(/[_]/gi)
+      
+      const pw = userPw.value;
+      const binEng = pw.search(/[A-Z]/gi);
+      const nump = pw.search(/[0-9]/g);
+      const engp = pw.search(/[a-z]/gi);
+
+      const nick = nickname.value;
+      const binEng3 = nick.search(/[A-Z]/gi);
+      const num3 = nick.search(/[0-9]/g);
+      const eng3 = nick.search(/[a-z]/gi);
+
+      const regExp = /[0-9a-zA-Z]([-_.]?[0-9a-zA-Z])*.[a-zA-Z]{2,3}$/i;
+
+      if (id == '') {
+        alert('아이디를 입력해주세요.')
+        userId.focus()
+      } else if (id.length < 3 || id.length > 20) {
+        alert('아이디를 조건에 맞게 입력해주세요.\n영소문자, 숫자, _만 입력가능, 3~20자 사이')
+        userId.focus()
+      } else if (eng < 0 && num < 0 && spe < 0) {
+        alert('아이디를 조건에 맞게 입력해주세요.\n영소문자, 숫자, _만 입력가능, 3~20자 사이')        
+        userId.focus()
+      } else if (pw == '') {
+        alert('비밀번호를 입력해주세요.')
+        userPw.focus()
+      } else if (pw.length < 8 || pw.length > 20) {
+        alert('비밀번호를 조건에 맞게 입력해주세요.\n8자리 이상 20자리 이하 숫자, 영문자 혼합')
+        userPw.focus()
+      } else if (binEng < 0 && nump < 0 && engp < 0) {
+        alert('비밀번호를 조건에 맞게 입력해주세요.\n8자리 이상 20자리 이하 숫자, 영문자 혼합')
+        userPw.focus()
+      } else if (pw != userPwch.value) {
+        alert('비밀번호가 다릅니다. 다시 확인해주세요.')
+        userPwch.focus()
+      } else if (nick == '') {
+        alert('닉네임을 입력해주세요.')
+        nickname.focus()
+      } else if (nick.length < 2 || nick.length > 10) {
+        alert('닉네임을 바르게 입력해주세요')
+        nickname.focus()
+      } else if (mailId.value == '') {
+        alert('이메일을 입력해주세요')
+        mailId.focus()
+      } else if (mailAdd.value == '') {
+        alert('이메일 주소를 입력해주세요.')
+      } else if (mailAdd.value.match(regExp) == null) {
+        alert('이메일 주소를 바르게 입력해주세요.')
+        mailAdd.focus()
+      } else if (userName.value == '') {
+        alert('이름을 입력해주세요.')
+        userName.focus()
+      } else if (userPh.value == '') {
+        alert('휴대폰 번호를 입력해주세요.')
+        userPh.focus()
+      } else if (userPh.value.length < 9 || userPh.value.length > 11) {
+        alert('휴대폰 번호를 바르게 입력해주세요.')
+        userPh.focus()
+      } else {
+        location.href="/pages/login/userSignup3.html"
+      }
+    })
+
+    
+    $(function(){
+      // 이메일 주소 입력
+      let emailAdd = document.querySelector(".mail-add");
+
+      $('.select-email').change(function(){ 
+        $(".select-email option:selected").each(function () { 
+          if($(this).val()== '1'){
+            $(emailAdd).val('');
+            $(emailAdd).attr("disabled",false); 
+            $(emailAdd).focus();
+          }else{ 
+            $(emailAdd).val($(this).val()); 
+            $(emailAdd).attr("disabled",true); 
+          } 
+        }); 
+      });
+    })
+    
+  </script>
+
+</body>
+</html>

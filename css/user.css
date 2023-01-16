@@ -1,0 +1,915 @@
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 8.4rem;
+  padding-bottom: 0;
+  background-color: var(--main-color);
+}
+header.login-status .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+header.login-status .inner .hidden {
+  width: 14rem;
+}
+header.login-status .inner .right {
+  display: flex;
+  gap: 4.3rem;
+  color: var(--white);
+}
+header.login-status .inner .right .user-info {
+  position: relative;
+}
+header.login-status .inner .right .user-info::after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background-color: rgba(255,255,255,.4);
+  position: absolute;
+  top: 50%;
+  right: -2.2rem;
+  transform: translateY(-50%);
+}
+
+main {
+  background-color: var(--light-gray);
+}
+.page-tit {
+  font-size: 3.4rem;
+  font-weight: 700;
+}
+
+/* 로그인페이지 */
+.login-wrap {
+  padding-top: 12.5rem;
+  padding-bottom: 16.7rem;
+}
+.login-wrap h2 {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+.login-wrap .login-box {
+  max-width: 336px;
+  margin: 0 auto;
+}
+.login-box .login-form .login-tp {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.6rem;
+}
+.login-box .login-form .login-tp input {
+  width: 100%;
+  padding: 1.4rem 0 1.6rem 1.5rem;
+  background-color: var(--white);
+  border-radius: 5px;
+}
+.login-box .login-form .login-tp input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: #B4B4B4;
+}
+.login-box .login-form .login-md {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.login-form .login-md {
+  margin-bottom: 3.2rem;
+}
+.login-form .login-md .check-label span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+.login-form .login-md .user-search {
+  font-size: 1.4rem;
+  line-height: 1.7;
+}
+.login-form .login-bt {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 2.2rem;
+  padding-bottom: 2.2rem;
+  border-bottom: var(--border);
+}
+.login-form .login-bt .login-btn,
+.login-form .login-bt .user-join {
+  width: 100%;
+  padding: 1.7rem 0;
+  font-size: 1.6rem;
+  font-weight: 400;
+  border-radius: 4px;
+}
+.login-form .login-bt .login-btn {
+  background-color: var(--text-color);
+  color: var(--white);
+  cursor: pointer;
+}
+.login-form .login-bt .user-join {
+  border: var(--border);
+  background-color: var(--white);
+  text-align: center;
+}
+.login-form .sns-login {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.login-form .sns-login a {
+  display: flex;
+  align-items: center;  
+  width: 100%;
+  height: 52px;
+  border-radius: 4px;
+  font-weight: 400;
+}
+.login-form .sns-login .nav-login {
+  gap: 80px;
+  padding-left: 14.8px;
+  background-color: #1EC800;
+  color: var(--white);
+}
+.login-form .sns-login .kakao-login {
+  gap: 84.2px;
+  padding-left: 19px;
+  background-color: #FAE300;
+  color: #391B1B;
+}
+
+/* 회원정보찾기 페이지 */
+.search-wrap {
+  padding-top: 20.8rem;
+  padding-bottom: 30.4rem;
+}
+.search-wrap .inner-box {
+  max-width: 551px;
+  margin: 0 auto;
+  text-align: center;
+}
+.search-wrap .inner-box h2 {
+  margin-bottom: 1.3rem;
+}
+.search-wrap .inner-box .page-txt {
+  margin-bottom: 2.8rem;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+.search-wrap .inner-box .page-txt strong {
+  color: var(--red);
+}
+.search-wrap .inner-box .email {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 5.8rem;
+}
+.search-wrap .inner-box .email .user-email {
+  height: 46px;
+  padding: 0 1.5rem;
+  border-radius: 5px;
+}
+.search-wrap .inner-box .email .email-id {
+  width: 158px;
+}
+.search-wrap .inner-box .email .email-pw {
+  width: 193px;
+}
+.search-wrap .inner-box .email .sel-box {
+  display: flex;
+  align-items: center;
+  width: 11.2rem;
+  height: 46px;
+  padding: 0 1.6rem;
+  border: var(--border);
+  border-radius: 5px;
+  background-color: var(--white);
+}
+.search-wrap .inner-box .email .sel-box .select-email {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  position: relative;
+}
+.search-wrap .inner-box .email .sel-box .select-email:focus {
+  outline: none;
+}
+.search-wrap .inner-box .search-info {
+  width: 33.6rem;
+  padding: 1.6rem 0;
+  border-radius: 4px;
+  text-align: center;
+  background-color: var(--text-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* 회원가입1 페이지 */
+.signup-wrap {
+  padding-top: 5rem;
+  background-color: var(--white);
+}
+.signup-wrap .inner {
+  padding: 0 7rem;
+}
+.signup-wrap h2 {
+  margin-bottom: 4rem;
+}
+.signup-wrap .terms-article {
+  padding-bottom: 3.4rem;
+  border-bottom: var(--border);
+}
+.signup-wrap h3 {
+  margin-bottom: 1.7rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.signup-wrap .terms-wrap {
+  height: 192px;
+  margin-bottom: 1.1rem;
+  padding: 1.6rem 2.2rem;
+  border: var(--border);
+  background-color: var(--white);
+}
+.signup-wrap .terms-wrap .inner-contents {
+  height: 100%;
+  overflow-y: scroll;
+}
+.signup-wrap .terms-wrap .inner-contents .terms-tit {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.signup-wrap .terms-wrap .inner-contents .terms-txt {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+.signup-wrap .agree-btn label {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+.signup-wrap .privacy-article {
+  padding-top: 4rem;
+  padding-bottom: 3.4rem;
+  border-bottom: var(--border);
+}
+.signup-wrap .privacy-article table {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  border: var(--border);
+  border-collapse: collapse;
+}
+.signup-wrap .privacy-article table th {
+  width: 33%;
+  padding: 1.5rem 0;
+  background-color: #F6F6F6;
+  border: var(--border);
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: center;
+}
+.signup-wrap .privacy-article table tr,
+.signup-wrap .privacy-article table td {
+  height: 4.2rem;
+  border: var(--border);
+  font-size: 1.6rem;
+}
+.signup-wrap .privacy-article table td {
+  padding: 1.5rem 2.4rem;
+}
+.all-agree {
+  padding-top: 4rem;
+  margin-bottom: 5.6rem;
+}
+#agreeAll:checked + label::before {
+  background-image: url(/images/check-icon2.png);
+}
+.all-agree label {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.btn-wrap {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 12rem;
+}
+.btn-wrap a {
+  width: 33.6rem;
+  padding: 1.6rem 0;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--white);
+} 
+.btn-wrap .home-btn {
+  background-color: #9D9D9D;
+}
+.btn-wrap .next-btn {
+  background-color: var(--text-color);
+}
+
+/* 회원가입2 페이지 */
+.signup2-wrap {
+  padding-top: 5rem;
+  padding-bottom: 12rem;
+}
+.signup2-wrap h2 {
+  margin-bottom: 4.3rem;
+  text-align: center;
+}
+.signup2-wrap .signup-form {
+  max-width: 376px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+.signup2-wrap .signup-form form .form-tp {
+  padding-bottom: 1.1rem;
+  border-bottom: var(--border);
+}
+.signup2-wrap .signup-form form .input-box {
+  display: flex;  
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.8rem;
+}
+.signup2-wrap .signup-form form .check-box {
+  margin-bottom: 1.6rem;
+}
+.signup2-wrap .signup-form form div input {
+  height: 46px;
+  padding: 0 1.5rem;
+}
+.signup2-wrap .signup-form form div input::placeholder {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.signup2-wrap .signup-form form div label {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.signup2-wrap .signup-form form .user-nickname + p {
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: var(--red);
+}
+.signup2-wrap .signup-form form .email-box {
+  width: 100%;
+}
+.signup2-wrap .signup-form form .email-box .email-tp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.signup2-wrap .signup-form form .email-box .email-bt {
+  display: flex;
+  width: 100%;
+  height: 46px;
+  margin-top: 8px;
+  background-color: var(--white);
+  border: var(--border);
+  padding: 0 1.5rem;
+}
+.signup2-wrap .signup-form form .email-box .email-bt select {
+  width: 100%;
+  border: 0;
+}
+.signup2-wrap .email-box .email-tp .mail-id {
+  width: 42%;
+}
+.signup2-wrap .email-box .email-tp .mail-add {
+  width: 52%;
+}
+.signup2-wrap .recommend-user {
+  margin-top: 2.7rem;
+}
+.signup2-wrap .recommend-user label span {
+  font-weight: 300;
+  color: #A8A8A8;
+}
+.signup2-wrap .join-btn {
+  width: 33.6rem;
+  padding: 1.6rem 0;
+  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--white);
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 회원가입3 페이지 */
+.signup3-wrap {
+  padding-top: 25.4rem;
+  padding-bottom: 36rem;
+  text-align: center;
+}
+.signup3-wrap h2 {
+  margin-bottom: 1.3rem;
+}
+.signup3-wrap p {
+  margin-bottom: 5.8rem;
+  font-size: 1.8rem;
+}
+.signup3-wrap a {
+  display: inline-block;
+  width: 32.6rem;
+  padding: 1.6rem;
+  border-radius: 4px;
+  background-color: var(--text-color);
+  color: var(--white);
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+/* 비밀번호변경 페이지 */
+.password-wrap {
+  padding-top: 21.6rem;
+  padding-bottom: 28.1rem;
+}
+.password-wrap .password-box {
+  max-width: 37.6rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+.password-wrap .password-box .input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 1.8rem;
+}
+.password-wrap .password-box .input-box label {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.password-wrap .password-box .input-box input {
+  width: 100%;
+  height: 4.6rem;
+  border: var(--border);
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.password-wrap .password-box .input-box input::placeholder {
+  font-weight: 200;
+  color: #B4B4B4;
+}
+.password-wrap .password-box .password-change {
+  width: 100%;
+  height: 5.2rem;
+  border-radius: 4px;
+  font-weight: 400;
+  background-color: var(--text-color);
+  color: var(--white);
+  cursor: pointer;
+}
+
+/* 내정보 페이지 */
+.myinfo-wrap .box {  
+  width: 100%;
+  margin-bottom: 1.6rem;
+  padding: 1.9rem 2.7rem 2.5rem;
+  border: var(--border);
+  background-color: var(--white);
+}
+.myinfo-wrap .box-tit {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.myinfo-wrap .left .box:last-child,
+.myinfo-wrap .right .box:last-child {
+  margin-bottom: 0;
+}
+.myinfo-wrap .contents-inner {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.myinfo-wrap .left,
+.myinfo-wrap .right {
+  width: calc((100% - 1.6rem) / 2);
+}
+.myinfo-wrap .point-box {
+  height: 6.1rem;
+  padding: 1.9rem 2.7rem;
+}
+.myinfo-wrap .point-box a {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.myinfo-wrap .point-box a .user-point {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--red);
+}
+.myinfo-wrap .letter-box {
+  height: 28.3rem;
+  padding: 1.7rem 1.7rem 2.5rem 2.7rem;
+}
+.myinfo-wrap .letter-box.open {
+  height: 37.5rem;
+  padding: 1.7rem 1.7rem 2.5rem 2.7rem;
+}
+.myinfo-wrap .letter-box .letter {
+  display: none;
+}
+.myinfo-wrap .letter-box .letter.open,
+.myinfo-wrap .letter-box .letter.write {
+  display: block;
+}
+.myinfo-wrap .letter-box .write-here .box-tit {
+  margin-bottom: 1.9rem;
+}
+.myinfo-wrap .letter-box .write-here div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.myinfo-wrap .letter-box .write-here .box-tp {
+  flex-direction: row;
+  justify-content: space-between;
+}
+.myinfo-wrap .letter-box .write-here .box-tp .close-btn {
+  font-weight: 700;
+}
+.myinfo-wrap .letter-box .write-here .user-receive {
+  margin-bottom: 2.2rem;
+}
+.myinfo-wrap .letter-box .write-here label {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+.myinfo-wrap .letter-box .write-here .user-receive input {
+  height: 4.6rem;
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.myinfo-wrap .letter-box .write-here .letter-txt {
+  margin-bottom: 2.6rem;
+}
+.myinfo-wrap .letter-box .write-here .letter-txt textarea {
+  width: 100%;
+  height: 10.3rem;
+  border: var(--border);
+  padding: 1.5rem;
+  resize: none;
+  outline: none;
+}
+.myinfo-wrap .letter-box .send-btn {
+  align-items: center;
+}
+.myinfo-wrap .letter-box .send {
+  width: 11.4rem;
+  height: 3.8rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: var(--text-color);
+  color: var(--white);
+  cursor: pointer;
+}
+.myinfo-wrap .letter-box .box-tp {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+.myinfo-wrap .letter-box .box-tp .tab-btn {
+  display: flex;
+  gap: 2.5rem;
+}
+.myinfo-wrap .letter-box .box-tp .tab-btn .box-tit {
+  color: #ACACAC;
+  position: relative;
+}
+.myinfo-wrap .letter-box .box-tp .tab-btn .box-tit:first-child::after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background-color: var(--border-color);
+  position: absolute;
+  top: 2px;
+  right: -12px;
+}
+.myinfo-wrap .letter-box .box-tp .tab-btn .box-tit.active {
+  color: var(--text-color);
+}
+.myinfo-wrap .letter-box .box-tp .letter-write {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5.6px;
+  width: 11.4rem;
+  height: 3.8rem;
+  border-radius: 4px;
+  font-weight: 600;
+  background-color: var(--text-color);
+  color: var(--white);
+}
+.myinfo-wrap .letter-box .tab-contents {
+  display: none;
+}
+.myinfo-wrap .letter-box .tab-contents.active {
+  display: block;
+}
+.myinfo-wrap .letter-box .letter-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  max-height: 13.5rem;
+  margin-bottom: 2.4rem;
+}
+.myinfo-wrap .scrap-box {
+  height: 28.3rem;
+}
+.myinfo-wrap .scrap-box .box-tit {
+  margin-bottom: 2.1rem;
+}
+.myinfo-wrap .scrap-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2.4rem;
+  max-height: 14.5rem;
+}
+.myinfo-wrap .scrap-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.myinfo-wrap .scrap-list li .tit {
+  margin-right: 8px;
+}
+.myinfo-wrap .scrap-list li .delete {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #AFAFAF;
+  border-bottom: 1px solid #AFAFAF;
+}
+.myinfo-wrap .scrap-list li .scrap-day {
+  font-size: 1.4rem;
+  color: #AFAFAF;
+}
+.myinfo-wrap .alert-box {
+  height: 28.3rem;
+}
+.myinfo-wrap .alert-box .alert-btn {
+  color: #ACACAC;
+}
+.myinfo-wrap .alert-box .alert-btn.active {
+  color: var(--text-color);
+}
+.myinfo-wrap .alert-box .tab-alert {
+  display: none;
+}
+.myinfo-wrap .alert-box .tab-alert.active {
+  display: block;
+}
+.myinfo-wrap .alert-box .tab-btn {
+  display: flex;
+  gap: 2.5rem;
+  margin-bottom: 2.1rem;
+}
+.myinfo-wrap .alert-box .tab-btn a {
+  position: relative;
+}
+.myinfo-wrap .alert-box .tab-btn a::after {
+  content: '';
+  width: 1px;
+  height: 14px;
+  background-color: var(--border-color);
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  transform: translateY(-50%);
+}
+.myinfo-wrap .alert-box .tab-btn a:last-child:after  {
+  display: none;
+}
+.myinfo-wrap .alert-box .alert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  margin-bottom: 2.4rem;
+  max-height: 14rem;
+}
+.myinfo-wrap .recommend-box {
+  height: 36rem;
+}
+.myinfo-wrap .recommend-box .box-tp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+.myinfo-wrap .recommend-box .box-tp .tp-right {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+.myinfo-wrap .recommend-box .tp-right .recommend-copy {
+  font-size: 1.4rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.myinfo-wrap .recommend-box .tp-right .recommend-people {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--red);
+}
+.myinfo-wrap .recommend-box .txt {
+  margin-bottom: 2.4rem;
+  line-height: 1.5;
+  color: #B2B2B2;
+}
+.myinfo-wrap .recommend-box .recomd-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 3.9rem;
+}
+.myinfo-wrap .recommend-box .recomd-list li {
+  display: flex;
+  justify-content: space-between;
+}
+.myinfo-wrap .recommend-box .recomd-list li p.last-connect,
+.myinfo-wrap .recommend-box .recomd-list li p.join-day {
+  font-size: 1.4rem;
+  color: #AFAFAF;
+}
+.myinfo-wrap .bt-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5.5rem;
+}
+.myinfo-wrap .bt-btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33.6rem;
+  height: 5.2rem;
+  border-radius: 4px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--white);
+}
+.myinfo-wrap .bt-btn a:first-child {
+  background-color: var(--text-color);
+}
+.myinfo-wrap .bt-btn a:last-child  {
+  background-color: #9D9D9D;
+}
+
+/* 포인트 팝업 */
+.my-point {
+  padding-top: 2rem;
+  background-color: var(--white);
+}
+.my-point .inner {
+  padding: 0 2rem;
+}
+.my-point h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.my-point .my-point-box {
+  margin-bottom: 2.4rem;
+  border: var(--border);
+}
+.my-point .my-point-tp {
+  padding: 1.9rem 2.7rem;
+}
+.my-point .my-point-tp .tp-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.1rem;
+}
+.my-point .my-point-tp .tp-head .left {
+  display: flex;
+  gap: 1.2rem;
+  font-size: 1.8rem;
+}
+.my-point .my-point-tp .tp-head .left .name {
+  font-weight: 600;
+}
+.my-point .my-point-tp .tp-head .left .num {
+  font-weight: 400;
+  color: var(--red);
+}
+.my-point .my-point-tp .tp-head .right {
+  font-size: 1.4rem;
+  font-weight: 200;
+}
+.my-point .my-point-tp .tp-head .right .all-page {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+.my-point .my-point-tp .point-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.my-point .my-point-tp .point-list li {
+  display: flex;
+  justify-content: space-between;
+}
+.my-point .my-point-tp .point-list li .plus {
+  width: 12rem;
+  font-weight: 600;
+}
+.my-point .my-point-tp .point-list li .reward-day {
+  color: #AFAFAF;
+}
+.my-point .my-point-bt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2.2rem 2.6rem;
+  border-top: var(--border);
+  font-size: 1.8rem;
+  font-weight: 600;
+  background-color: var(--light-gray);
+}
+.my-point .my-point-bt div {
+  display: flex;
+  gap: 3.3rem;
+  font-weight: 400;
+}
+.my-point .my-point-bt div .total {
+  color: var(--red);
+}
+.my-point .pagination {
+  margin-bottom: 2.4rem;
+}
+.my-point .close {
+  width: 100%;
+}
+.my-point .close button {
+  display: block;
+  margin: 0 auto;
+  width: 33.6rem;
+  height: 5.2rem;
+  background-color: var(--text-color);
+  border-radius: 4px;
+  font-weight: 400;
+  color: var(--white);
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 1250px) {
+  header.login-status .inner .hidden {
+    display: none;
+  }
+  .myinfo-wrap .contents-inner {
+    flex-direction: column;
+  }
+  .myinfo-wrap .left, .myinfo-wrap .right {
+    width: 100%;
+  }
+  .myinfo-wrap .left {
+    margin-bottom: 1.6rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .signup-wrap .inner {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {  
+  .myinfo-wrap .recommend-box .recomd-list li p.last-connect,
+  .myinfo-wrap .recommend-box .recomd-list li p.join-day {
+    display: none;
+  }
+  .myinfo-wrap .recommend-box {
+    height: 40rem;
+  }
+  .my-point .my-point-tp .point-list li .reward-day {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .myinfo-wrap .scrap-list li .scrap-day {
+    display: none;
+  }
+}

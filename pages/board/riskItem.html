@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=yes" name="viewport" />
+  <meta name="author" content="31system" />
+  <meta name="description" content="벤허리서치센터">
+  <meta name="Keywords" content="벤허리서치, 벤허리서치센터" />
+  <title>종목위험도 | 벤허리서치센터</title>
+  
+  <!-- og -->
+  <meta property="og:type" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:title" content="벤허리서치센터">
+  <meta property="og:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색">
+  <meta property="og:url" content="bh-rc.co.kr">
+  <meta property="og:image" content="/images/kakao-img.png" />
+  <meta property="og:image:width" content="800" />
+  <meta property="og:image:height" content="400" />
+
+  <!-- twitter -->
+  <meta name="twitter:title" content="벤허리서치센터" />
+  <meta name="twitter:description" content="한국대표 주식포털사이트, 종목위험관리, 종목검증, 기업정보검색, 실시간 뉴스검색, 재무제표검색, 리포트검색" />
+  <meta name="twitter:url" content="#" />
+  <meta name="twitter:image" content="/imges/kakao-img.png" />
+
+  <!-- Faivicon -->
+  <link rel="icon" type="image/png" href="/images/favicon.png">
+
+  <!-- swiper -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet" href="/css/common.css">
+  <link rel="stylesheet" href="/css/board.css">
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
+  <script src="https://code.highcharts.com/highcharts.js"></script>
+  <script src="https://code.highcharts.com/modules/data.js"></script>
+  <script src="https://code.highcharts.com/modules/series-label.js"></script>
+  <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+  <script src="/js/main.js" defer></script>
+
+</head>
+<body>
+  
+  <!-- header -->
+  <header id="header"></header>
+
+  <main class="risktotal-wrap">
+    <div class="inner">
+      <div class="sub-tit">위험 관리 레포트</div>
+      <h2 class="page-tit">종목위험도</h2>
+      <div class="inner-wrap">
+        <div class="report-tp">
+          <input type="text" placeholder="키워드를 입력해주세요." class="input-key"/>
+          <button class="search">검색</button>
+        </div>
+        <div class="report-contents">
+          <div>
+            <figure class="hightcharts-figure chart">
+              <div id="container"></div>
+            </figure>
+          </div>
+          <p class="mo scroll">*가로로 스크롤 -></p>
+          <div class="table-wrap">
+            <table class="board-table">
+              <thead>
+                <tr>
+                  <th class="date">날짜</th>
+                  <th class="">종목</th>
+                  <th class="tit">종목명</th>
+                  <th class="">위험도</th>
+                  <th class="">단계</th>
+                  <th class="">시장</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+                <tr>
+                  <td>2022.01.01</td>
+                  <td>123456</td>
+                  <td class="title">종목명입니다.</td>
+                  <td>0.000000001344</td>
+                  <td>7</td>
+                  <td>1</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div id="pagination" class="pagination"></div>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <!-- footer -->
+  <footer id="footer"></footer>
+
+  <!-- privacy popup -->
+  <div class="popup-wrap" id="popupWrap"></div>
+
+  <script>    
+		Highcharts.setOptions({
+      lang: {
+        thousandsSep: ','
+      }
+    });
+    
+    Highcharts.chart('container', {
+      responsive: {  
+        rules: [{  
+          condition: {  
+            maxWidth: 500  
+          },  
+          chartOptions: {  
+            legend: {  
+              enabled: false  
+            }  
+          }  
+        }]  
+      },
+      title: {
+        text: '개별 주식 위험도와 위험단계',
+        style: {
+          "fontSize": "22px",
+          "fontWeight": "700"
+        }
+      },
+      subtitle: {
+        text: '위험단계는 1단계에서 10단계까지',
+        style: {
+          "fontSize": "14px",
+          "fontWeight": "400"
+        }
+      },
+      navigator: {
+        enabled: false
+      },
+      exporting: {
+        enabled: false
+      },
+
+      xAxis: {
+        // type: 'datetime',
+        categories: ['21.01.08', '21.01.15', '21.01.22', '21.01.29', '21.02.05', '21.02.12', '21.02.19', '21.02.26', '21.03.05'],
+      },
+      yAxis: [
+        {
+          title : {
+            text: "위험도",
+            textAlign: 'center',
+            x: 0,
+            style: {
+              "fontSize": "1.6rem",
+              "fontWeight": 600
+            }
+          },
+          showFirstLabel: false,
+          min: 0,
+          tickAmount: 5,
+          // max: 0.016,
+          // tickInterval: 0.004,
+          plotLines: [{
+            color: '#EF4B4B'
+          }],
+          tickColor: "#777"
+        },
+        { 
+          title: {
+            text: "위험단계(1~10)",
+            textAlign: 'center',
+            x: 0,
+            style: {
+              "fontSize": "1.6rem",
+              "fontWeight": 600
+            }
+          },
+          min: 0,
+          max: 2.4,
+          tickAmount: 5,
+          tickInterval: 0.6,
+          gridLineWidth: 0,
+          opposite: true,
+        }
+      ],
+      legend: {
+        align: 'center',
+        verticalAlign: 'bottom',
+        borderWidth: 0,
+        backgroundColor: '#F5F5F5',
+        borderRadius: 15,
+        padding: 8
+      },
+      tooltip: {
+        shared: true,
+      },
+      plotOptions: {
+        series: {
+          cursor: 'pointer',
+          className: 'popup-on-click',
+          marker: {
+            lineWidth: 1
+          }
+        }
+      },
+      series: [
+        {
+          name: '위험도',
+          color: '#19B0E8',
+          data: [0.007313, 0.00017, 0.000169, 0.000169, 0.000169, 0.000169, 0.014455, 0.000169, 0.000169]
+        }, 
+        {
+          name: '위험단계(1~10)',
+          color: '#EF4B4B',
+          data: [2, 1, 1, 1, 1, 1, 2, 1, 1],
+        }
+      ],
+      credits: {
+        enabled: false
+      }
+    });
+
+
+  </script>
+
+</body>
+</html>
